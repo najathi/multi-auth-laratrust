@@ -67,6 +67,14 @@
                                 </div>
                             </li>
                         @endguest
+
+                        {{-- Auth::user()->hasRole('user') will work instead of @role('user'). both are same.--}}
+                        @role('user')
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('dashboard.myprofile') }}">{{ __('My Profile') }}</a>
+                        </li>
+                        @endrole
+
                     </ul>
                 </div>
             </div>

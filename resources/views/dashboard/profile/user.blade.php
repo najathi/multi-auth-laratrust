@@ -14,12 +14,11 @@
                             </div>
                         @endif
 
-                        <p>Dashboard</p>
+                        <h3>Hi {{\Illuminate\Support\Facades\Auth::user()->name}}</h3>
+                        <h5>Email: {{\Illuminate\Support\Facades\Auth::user()->email}}</h5>
 
-                        <a href="{{route('dashboard')}}"><strong>Dashboard</strong></a>
-                        <br/>
+                        <p>User My Profile</p>
 
-                        {{ __('You are logged in! as user') }}
                     </div>
                 </div>
             </div>

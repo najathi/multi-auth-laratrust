@@ -14,10 +14,7 @@
                             </div>
                         @endif
 
-                        <p>Dashboard</p>
-
-                        <a href="{{route('dashboard')}}"><strong>Dashboard</strong></a>
-                        <br/>
+                        <p>Admin Dashboard</p>
 
                         {{ __('You are logged in! as user') }}
                     </div>
